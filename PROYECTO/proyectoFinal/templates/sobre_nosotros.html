@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{%block css%}
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+{%endblock css%}
+{% block contenido %}
+    <h1 class="titulo-sobre-nosotros">Sobre Nosotros</h1>
+
+    <!-- Enlace a la hoja de estilos de Swiper -->
+
+    
+    <div class="ag-slide-block" style="height: 100%;">
+        <div class="ag-slide-wrapper swiper-container">
+            <ul class="swiper-wrapper ag-slide_list">
+                <!-- Diapositiva 1 - Leandro Gomez -->
+                <li class="swiper-slide ag-slide_item" data-swiper-autoplay="1500" data-swiper-slide-index="0">
+                    <img src="https://i.imgur.com/D5YJLNU.png" class="ag-slide_img" alt="Leandro Gomez">
+                    <div class="ag-slide_info clearfix">
+                        <div class="ag-slide-info_descr">
+                            <small class="ag-slide-info_category"></small>
+                            <h6 class="ag-slide-info_title">Leandro Gomez</h6>
+                        </div>
+                        <div class="ag-slide-info_rate">
+                            <b class="ag-slide-info_strong">24 AÑOS</b>
+                            <span class="ag-slide-info_comments">Hola, me llamo Leandro. Vivo en Resistencia y soy estudiante de informática.</span>
+                        </div>
+                    </div>
+                </li>
+
+   <!-- Diapositiva 2 - Martin Ramela -->
+        <li class="swiper-slide ag-slide_item" data-swiper-autoplay="1500" data-swiper-slide-index="1">
+          <img src="https://i.imgur.com/GiXu3SD.png" class="ag-slide_img" alt="Martin Ramela">
+          <div class="ag-slide_info clearfix">
+            <div class="ag-slide-info_descr">
+              <small class="ag-slide-info_category"></small>
+              <h6 class="ag-slide-info_title">Martin Ramela</h6>
+            </div>
+            <div class="ag-slide-info_rate">
+              <b class="ag-slide-info_strong">28 AÑOS</b>
+              <span class="ag-slide-info_comments">Hola, me llamo Martin. Soy estudiante de programación, me gusta el fútbol con amigos y leer libros o comics.</span>
+            </div>
+          </div>
+        </li>
+
+        <!-- Diapositiva 3 - Nicole -->
+        <li class="swiper-slide ag-slide_item" data-swiper-autoplay="1500" data-swiper-slide-index="2">
+          <img src="https://i.imgur.com/TamJ6u4.png" class="ag-slide_img" alt="Nicole">
+          <div class="ag-slide_info clearfix">
+            <div class="ag-slide-info_descr">
+              <small class="ag-slide-info_category"></small>
+              <h6 class="ag-slide-info_title">Nicole Teruel</h6>
+            </div>
+            <div class="ag-slide-info_rate">
+              <b class="ag-slide-info_strong">27 AÑOS</b>
+              <span class="ag-slide-info_comments">Hola, me llamo Nicole. Vivo en Quitipili y soy estudiante.</span>
+            </div>
+          </div>
+        </li>
+
+        <!-- Diapositiva 4 - Matias Sanchez -->
+        <li class="swiper-slide ag-slide_item" data-swiper-autoplay="1500" data-swiper-slide-index="3">
+          <img src="https://i.imgur.com/vjYo9sM.png" class="ag-slide_img" alt="Matias Sanchez">
+          <div class="ag-slide_info clearfix">
+            <div class="ag-slide-info_descr">
+              <small class="ag-slide-info_category"></small>
+              <h6 class="ag-slide-info_title">Matias Sanchez</h6>
+            </div>
+            <div class="ag-slide-info_rate">
+              <b class="ag-slide-info_strong">34 AÑOS</b>
+              <span class="ag-slide-info_comments">Hola, me llamo Matias. Soy técnico en reparaciones de PC y estudiante de programación en UTN Resistencia.</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="swiper-slide ag-slide_item" data-swiper-autoplay="1500" data-swiper-slide-index="0">
+          <img src="https://i.imgur.com/t4bC6wI.png" class="ag-slide_img" alt="joaquin pablo strusiat">
+          <div class="ag-slide_info clearfix">
+            <div class="ag-slide-info_descr">
+              <small class="ag-slide-info_category"></small>
+              <h6 class="ag-slide-info_title">Joaquin Pablo Strusiat</h6>
+            </div>
+            <div class="ag-slide-info_rate">
+              <b class="ag-slide-info_strong">20 AÑOS</b>
+              <span class="ag-slide-info_comments">Hola, mi nombre es Pablo Joaquin Strusiat, tengo 20 años, soy oriundo de Quitilipi Chaco pero vivo en Resistencia hace 3 años, soy estudiante de Ingeniería en la UTN-resistencia y en mi tiempo libre me dedico a estudiar e incursionarme en el mundo de la programación.</span>
+            </div>
+          </div>
+        </li>
+
+        <!-- Diapositiva 2 - Martin Ramela -->
+        <li class="swiper-slide ag-slide_item" data-swiper-autoplay="1500" data-swiper-slide-index="1">
+          <img src="https://i.imgur.com/hC78VkM.png" class="ag-slide_img" alt="meza roman emanuel">
+          <div class="ag-slide_info clearfix">
+            <div class="ag-slide-info_descr">
+              <small class="ag-slide-info_category"></small>
+              <h6 class="ag-slide-info_title">Meza Roman Emanuel</h6>
+            </div>
+            <div class="ag-slide-info_rate">
+              <b class="ag-slide-info_strong">26 AÑOS</b>
+              <span class="ag-slide-info_comments">Hola, mi nombre es Roman, tengo 26 años, soy estudiante de ciencias económicas, y estoy dando los primeros pasos en la programacion gracias al informatorio,
+                me considero una persona con ganas de aprender, y de seguir profundizando mis conocimiento acerca del desarrollo web.</span>
+            </div>
+          </div>
+        </li>
+
+        <!-- Diapositiva 3 - Nicole -->
+        <li class="swiper-slide ag-slide_item" data-swiper-autoplay="1500" data-swiper-slide-index="2">
+          <img src="https://i.imgur.com/M030K36.png" class="ag-slide_img" alt="hernan mayol">
+          <div class="ag-slide_info clearfix">
+            <div class="ag-slide-info_descr">
+              <small class="ag-slide-info_category"></small>
+              <h6 class="ag-slide-info_title">Hernan Mayol</h6>
+            </div>
+            <div class="ag-slide-info_rate">
+              <b class="ag-slide-info_strong">23 AÑOS</b>
+              <span class="ag-slide-info_comments">Hola, me llamo Hernan. Vivo en resistencia soy estudiante de programacion y me interesa aprender mucho mas sobre el desarrollo web</span>
+            </div>
+          </div>
+        </li>
+
+        <!-- Diapositiva 4 - Matias Sanchez -->
+        <li class="swiper-slide ag-slide_item" data-swiper-autoplay="1500" data-swiper-slide-index="3">
+          <img src="https://i.imgur.com/Wq3on6P.png" class="ag-slide_img" alt="valentino medina gomez">
+          <div class="ag-slide_info clearfix">
+            <div class="ag-slide-info_descr">
+              <small class="ag-slide-info_category"></small>
+              <h6 class="ag-slide-info_title">Valentino Medina Gomez</h6>
+            </div>
+            <div class="ag-slide-info_rate">
+              <b class="ag-slide-info_strong">17 AÑOS</b>
+              <span class="ag-slide-info_comments">Me llamo Valentino Medina Gómez y tengo 17 años. Soy estudiante del nivel secundario en el Colegio Chaco Austral N° 188. Me considero una persona muy trabajadora que siempre se propone llegar a un objetivo ya sea en cualquier ámbito. Cómo conocimiento, tengo un nivel básico de inglés. Y lo que me gusta hacer como hobby es ir al gimnasio</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="swiper-slide ag-slide_item" data-swiper-autoplay="1500" data-swiper-slide-index="2">
+          <img src="https://i.imgur.com/EUL1wft.png" class="ag-slide_img" alt="hernan mayol">
+          <div class="ag-slide_info clearfix">
+            <div class="ag-slide-info_descr">
+              <small class="ag-slide-info_category"></small>
+              <h6 class="ag-slide-info_title">Diaz Carlos</h6>
+            </div>
+            <div class="ag-slide-info_rate">
+              <b class="ag-slide-info_strong">33 AÑOS</b>
+              <span class="ag-slide-info_comments">Hola, me llamo Carlos. Vivo en Resistencia y soy estudiante en Informática en la UNNE.</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="swiper-slide ag-slide_item" data-swiper-autoplay="1500" data-swiper-slide-index="2">
+          <img src="https://i.imgur.com/thiaNh5.png" class="ag-slide_img" alt="hernan mayol">
+          <div class="ag-slide_info clearfix">
+            <div class="ag-slide-info_descr">
+              <small class="ag-slide-info_category"></small>
+              <h6 class="ag-slide-info_title">Federico Nicolas Oroño</h6>
+            </div>
+            <div class="ag-slide-info_rate">
+              <b class="ag-slide-info_strong">44 AÑOS</b>
+              <span class="ag-slide-info_comments">Hola, soy Federico. Actualmente vivo en General San Martin, me interesa mucho la programación y la informática. </span>
+            </div>
+          </div>
+        </li>
+
+            </ul>
+            <!-- Agregar controles de navegación del slider -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+{% endblock contenido %}
+
+{%block script%}
+    <!-- Enlace al archivo de jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Enlace al archivo de Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Configurar el slider cuando el documento esté listo
+        $(document).ready(function () {
+            // Inicializar el slider de Swiper
+            var mySwiper = new Swiper('.swiper-container', {
+                // Configuración del slider
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                autoplay: {
+                    delay: 3500,
+                },
+            });
+        });
+    </script>
+{%endblock script%}
+

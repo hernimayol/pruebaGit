@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block css%}
+<link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/style_empr_listar.css'%}">
+{%endblock css%}
+{% block contenido %}	
+<div class="container" >
+    <div id="app">
+        <div class="error">403</div>
+        <div class="txt-error">
+          Acceso <span class="blink-error">PROHIBIDO</span>
+        </div>
+     </div>
+    </div>
+</div>
+{% endblock contenido %}

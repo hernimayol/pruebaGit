@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style_filtrar.css'%}">
+{% endblock css %}
+
+{% block contenido %}
+<div class="base">
+
+  <div class="filtros">
+    <div class="just dropdown">
+      <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Filtrar orden
+      </button>
+      <ul class="dropdown-menu dropdown-menu-dark">
+        {% if nombre %}
+                    <li><a class="dropdown-item" href="{% url 'empr:filtrar_orden_cat' nombre=nombre orden='asc' %}">Abecedario A - Z</a></li>
+                    <li><a class="dropdown-item" href="{% url 'empr:filtrar_orden_cat' nombre=nombre orden='desc' %}">Abecedario Z - A</a></li>
+                    <li><a class="dropdown-item" href="{% url 'empr:filtrar_orden_cat' nombre=nombre orden='antiguedad-asc' %}">Más Nuevos</a></li>
+                    <li><a class="dropdown-item" href="{% url 'empr:filtrar_orden_cat' nombre=nombre orden='antiguedad-desc' %}">Más Antiguos</a></li>
+        {% else %}
+            <li><a class="dropdown-item" href="{% url 'empr:filtrar_orden' orden='asc' %}">Abecedario A - Z</a></li>
+            <li><a class="dropdown-item" href="{% url 'empr:filtrar_orden' orden='desc' %}">Abecedario Z - A</a></li>
+            <li><a class="dropdown-item" href="{% url 'empr:filtrar_orden' orden='antiguedad-asc' %}">Más Nuevos</a></li>
+            <li><a class="dropdown-item" href="{% url 'empr:filtrar_orden' orden='antiguedad-desc' %}">Más Antiguos</a></li>
+        {% endif %}
+    </ul>
+    </div>
+  </div>
+ 
+
+  <div class="empr">
+    {%if emprendimientos%}
+    {%for emprendimimento in emprendimientos%}
+    <div class="card" style="border: none;">
+        <a href="{% url 'empr:detalle_emprendimiento' emprendimimento.pk %}">
+
+        <div class="img-content" style="background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)) ,url({{emprendimimento.imagen.url}}); background-size: cover;">
+          <img src="{{emprendimimento.imagen.url}}" alt="foto">
+        </div>
+
+        <div class="card-content">
+          <h2 class="titulo">{{emprendimimento.titulo}}</h2>
+          <p class="name">{{emprendimimento.resumen}}</p>
+        </div>
+        
+      </a>
+    </div>
+    {%endfor%}
+    {%else%}
+    <h1 class="no-disponible">No hay emprendimientos disponibles para esta sección</h1>
+    {%endif%}
+  </div>
+
+</div>
+{% endblock contenido %}
