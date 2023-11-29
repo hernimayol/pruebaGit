@@ -1,5 +1,4 @@
 {% load static %}
-{% load humanize %}
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -89,11 +88,7 @@
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Categorías
                             </a>
-                            <ul class="dropdown-menu">
-                                {%for categoria in cat_context%}
-                                <li><a class="dropdown-item" href="{%url 'empr:filtrar_orden_cat' nombre=categoria.nombre orden='asc'%}">{{categoria.nombre}}</a></li>
-                                {%endfor%}
-                            </ul>
+
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'sobre_nosotros' %}">Sobre Nosotros</a>
@@ -126,7 +121,7 @@
 
 
 
-       <footer><p>Diseñado y desarrollado por: Grupo 6 - Comision 1 - Informatorio</p></footer>
+       <footer><p>Diseñado y desarrollado por: Jose Hernan Mayol Toledo - Comision 1 - Informatorio</p></footer>
        {%block script%}
        {%endblock script%}
        {% autoescape off %}

@@ -14,7 +14,7 @@ Fonts
 body{
   padding: 0;
   margin: 0;
-  background: linear-gradient(rgba(111,42,243,0.5), rgba(111,42,243,0.2)) ,url("../img/fondo-claro2.jpg");
+  background: linear-gradient(rgba(111,42,243,0.5), rgba(111,42,243,0.2)) ,url("../img/fondo.jpg");
   background-size:cover;
   font-family: 'Roboto', 'Open Sans', Arial, Helvetica, Sans-serif, Verdana;
 }
@@ -113,7 +113,7 @@ footer{
   display: absolute;
   bottom: 0;
   width: 100%;
-  height: 70px;
+  height: 50px;
   text-align: center;
   padding: 10px;
   box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
@@ -122,7 +122,6 @@ footer{
 footer p{
   color: white;
   padding: 3px;
-  margin-top: 10px;
 }
 
 
@@ -184,8 +183,13 @@ ul {
   box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
 }
 
-
-
+.comentar{
+  padding: 1.2rem;
+  margin-bottom: 30px;
+  border: solid green;
+  border-radius: 10px;
+  color: green;
+}
 .comentarios-enlaces{
   font-size: 0.8rem;
   padding: 5px;
@@ -225,79 +229,4 @@ ul {
   .comment-content {
     font-size: 14px;
   }
-}
-
-.formulario-contenedor{
-  display: flex;
-  width: 140vh;
-}
-
-.formulario-contacto{
-  margin-right: 2rem;
-}
-
-.formulario-mapa{
-  margin-left: 2rem;
-  border-radius: 10px;
-  border: solid;
-  border-color: rgba(255, 255, 255, 0.2);
-}
-.formulario-mapa iframe{
-  border-radius: 8px;
-  margin: 2px;
-  margin-bottom: 0;
-}
-/*Sobre Nosotros*/
-
-/* Estilos adicionales del slider */
-.ag-slide-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
-  margin: 0;
-}
-
-.ag-slide-wrapper {
-  width: 30%; /* reducir tamaño de la tarjeta */
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.ag-slide_item {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Agregar transiciones para efecto hover */
-  transition: transform 0.5s, box-shadow 0.3s;
-}
-
-.ag-slide_img {
-  width: 200px; /* Ajustar el ancho de la imagen */
-  height: 200px; /* Aumentar el tamaño de alto */
-  border-radius: 50%;
-  margin-bottom: 10px;
-  /* Agregar transiciones para efecto hover */
-  transition: transform 0.5s, filter 0.5s;
-}
-
-/* Efecto de imágenes flotantes al hacer hover */
-.ag-slide_item:hover {
-  transform: translateX(3px) translateY(3px) translateZ(10px) rotateX(-5deg) rotateY(-5deg);
-  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
-}
-
-.ag-slide_item:hover .ag-slide_img {
-  transform: translateX(5px) translateY(5px) translateZ(-10px);
-}
-.titulo-sobre-nosotros{
-  margin-top:2rem;
-  color: #e7e8e9;
-  text-align: center;
 }

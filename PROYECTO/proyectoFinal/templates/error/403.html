@@ -6,12 +6,10 @@
 {%endblock css%}
 {% block contenido %}	
 <div class="container" >
-    <div id="app">
-        <div class="error">403</div>
-        <div class="txt-error">
-          Acceso <span class="blink-error">PROHIBIDO</span>
+    <div class="container mt-5">
+        <div class="alert alert-danger">
+            <strong>Error 403:</strong> {{ mensaje }}
         </div>
-     </div>
     </div>
 </div>
 {% endblock contenido %}
